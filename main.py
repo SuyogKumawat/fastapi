@@ -44,7 +44,7 @@ def handl_query(user:str,query: Optional[str]):
 @app.get("/",response_class=HTMLResponse)
 def base_home(request:Request):
     print("I am goint to return html file")
-    return template.TemplateResponse("home.html",{"request":request})
+    return template.TemplateResponse("index.html",{"request":request})
 
 
 
